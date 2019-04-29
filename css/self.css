@@ -1,0 +1,136 @@
+.page,.bigImg{
+    width:100%;
+    height:100%;
+    background:#000;
+}
+.bigImg{
+    display: none;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 100;
+}
+.swiper-container{
+    width:14.41rem;
+    margin:0 auto;
+    height:100%;
+}
+.swiper-container img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+.swiper-slide{
+    position: relative;
+}
+.swiper-container .name{
+   position: absolute;
+    display: block;
+    top:.34rem;
+    left:0;
+    right:0;
+    width:3.39rem;
+    height:1.68rem;
+    margin:0 auto;
+    background:rgba(255,255,255,.5);
+    color:#262626;
+    font-size:1rem;
+    text-align: center;
+    border-radius: .04rem;
+}
+.swiper-container .name span{
+    color:#FF4F32;
+}
+.name.han{
+    box-sizing: border-box;
+    padding-top:.5rem;
+    line-height: .94rem;
+}
+.name.han .red{
+    padding-top:.5rem;
+}
+.swiper-container .red {
+    position: relative;
+}
+.swiper-container .red i{
+    display: block;
+    position: absolute;
+    width: 5rem;
+    top:0;
+    left:50%;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    font-style:normal;
+    font-size:.48rem;
+}
+.swiper-button-next{
+    width:.58rem;
+    height:.58rem;
+    background:url(../image/y@2x.png) no-repeat center center;
+    -webkit-background-size:100%;
+    -ms-background-size:100%;
+    -moz-background-size:100%;
+    background-size:100%;
+    color:#000;
+    right:1.5rem;
+    font-size:.24rem;
+    line-height: .58rem;
+    text-align: center;
+    border-radius: .04rem;
+}
+.swiper-button-prev{
+    width:.58rem;
+    height:.58rem;
+    background:url(../image/z@2x.png) no-repeat center center;
+    -webkit-background-size:100%;
+    -ms-background-size:100%;
+    -moz-background-size:100%;
+    background-size:100%;
+    color:#000;
+    left:1.5rem;
+    font-size:.24rem;
+    line-height: .58rem;
+    text-align: center;
+    border-radius: .04rem;
+}
+.btn-box{
+   position: absolute;
+    right:.95rem;
+    bottom:.45rem;
+    z-index: 1000;
+    
+}
+.btn-box div{
+    float: left;
+    width:.6rem;
+    height:.6rem;
+    border-radius: .07rem;
+    background: #05C5BE;
+    margin-right:.2rem;
+    cursor: pointer;
+}
+.btn-box .play{
+    background:url(../image/play-btn@2x.png) no-repeat;
+    -webkit-background-size:100%;
+    -moz-background-size:100%;
+    -ms-background-size:100%;
+    background-size:100%;
+}
+.btn-box .voice{
+    background:url(../image/voice-btn@2x.png) no-repeat;
+    -webkit-background-size:100%;
+    -moz-background-size:100%;
+    -ms-background-size:100%;
+    background-size:100%;
+}
+.btn-box .home{
+    background:url(../image/home@2x.png) no-repeat;
+    -webkit-background-size:100%;
+    -moz-background-size:100%;
+    -ms-background-size:100%;
+    background-size:100%;
+}

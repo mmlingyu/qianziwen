@@ -1,0 +1,76 @@
+.about-box{
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    top:50%;
+    margin-top:-370px;
+    width:1200px;
+    height:740px;
+    box-sizing: border-box;
+    padding:80px 70px;
+    background: url(../image/about-bc@2x.png) no-repeat center center;
+    -webkit-background-size: 100%;
+    -ms-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    z-index: 1000;
+    
+}
+.about-box .left{
+    width:530px;
+}
+.about-box .title{
+    font-size: 36px;
+    color:#05C5BE;
+    line-height: 36px;
+    margin-bottom:32px;
+}
+.about-box .title span{
+    color:#999999;
+    font-size: 38px;
+    float: right;
+    opacity:0.08;
+}
+.about-box .content{
+   color:#333;
+    line-height: 27px;
+    text-align: justify;
+}
+.contact{
+    margin-top:60px;
+}
+.contact .item{
+    float:left;
+    height:72px;
+    padding-left:90px;
+    
+}
+.contact .item .top{
+    color:#292A34;
+    line-height: 14px;
+    margin-top:15px;
+}
+.contact .item .bottom{
+   font-size: 16px;
+    color:#05C5BE;
+    line-height: 13px;
+    margin-top:12px;
+}
+.contact .phone{
+    background:url(../image/phone@2x.png) no-repeat left top;
+     -webkit-background-size:auto 72px;
+    -ms-background-size: auto 72px;
+    -moz-background-size: auto 72px;
+    background-size: auto 72px;
+    margin-right:48px;
+    
+}
+.contact .email{
+    background:url(../image/mail@2x.png) no-repeat left top;
+     -webkit-background-size:auto 72px;
+    -ms-background-size: auto 72px;
+    -moz-background-size: auto 72px;
+    background-size: auto 72px;
+    
+}

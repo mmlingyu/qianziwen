@@ -1,0 +1,87 @@
+{
+    data: [{
+        name: '天空',
+        han: 'tiān',
+        img: 'tian.gif',
+        audio: 'tiankong'
+}, {
+        name: '地球',
+        han: 'dì',
+        img: 'di.gif',
+        audio: 'diqiu'
+}, {
+        name: '玄狐',
+        han: 'xúan',
+        img: 'xuan.jpg',
+        audio: 'xuanhu'
+}, {
+        name: '黄色',
+        han: 'huáng',
+        img: 'huang.gif',
+        audio: 'huangse'
+}, {
+        name: '宇航员',
+        han: 'yǔ',
+        img: 'yu.gif',
+        audio: 'yuhangyuan'
+}, {
+        name: '宙斯',
+        han: 'zhòu',
+        img: 'zhou.jpg',
+        audio: 'zhousi'
+}, {
+        name: '洪水',
+        han: 'hóng',
+        img: 'hong.jpg',
+        audio: 'hongshui'
+}, {
+        name: '慌山',
+        han: 'huāng',
+        img: 'huangs.jpg',
+        audio: 'huangshan'
+}, {
+        name: '日光',
+        han: 'rì',
+        img: '1.gif',
+        audio: 'riguang'
+}, {
+        name: '月亮',
+        han: 'yùe',
+        img: '2.gif',
+        audio: 'yueliang'
+}, {
+        name: '盈利',
+        han: "yíng",
+        type: 2,
+        img: '3.jpg',
+        audio: 'yingli'
+}, {
+        name: '昃迎',
+        han: "zè",
+        img: '4.jpg',
+        audio: 'zeying'
+}, {
+        name: '辰星',
+        han: 'chén',
+        type: 2,
+        img: '5.jpg',
+        audio: 'chenxing'
+}, {
+        name: '星宿',
+        han: 'sù',
+        type: 2,
+        img: '6.gif',
+        audio: 'xingxiu'
+}, {
+        name: '列队',
+        han: 'liè',
+        type: 2,
+        img: '7.jpg',
+        audio: 'liedui'
+}, {
+        name: '张开',
+        han: 'zhāng',
+        img: '8.gif',
+        audio: 'zhanggong'
+}]
+}

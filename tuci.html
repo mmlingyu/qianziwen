@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>心教图文汉语版</title>
+        <link rel="icon" href="./image/bitbug_favicon.ico" type="image/x-icon" />
+
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/self.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">slider1</div>
+                <div class="swiper-slide">slider2</div>
+                <div class="swiper-slide">slider3</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="btn-box">
+
+        <div class="home"></div>
+    </div>
+    <div class="audio-box" style="display: none">
+        <audio controls autoplay id="aud">
+            <source id="tts_source" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/swiper/swiper.min.js"></script>
+    <script>
+        var list = [{
+            name: '天空',
+            han: 'tiān',
+            img: 'tian.gif',
+            audio: 'tiankong'
+        }, {
+            name: '地球',
+            han: 'dì',
+            img: 'di.gif',
+            audio: 'diqiu'
+        }, {
+            name: '玄狐',
+            han: 'xúan',
+            img: 'xuan.jpg',
+            audio: 'xuanhu'
+        }, {
+            name: '黄色',
+            han: 'huáng',
+            img: 'huang.gif',
+            audio: 'huangse'
+        }, {
+            name: '宇航员',
+            han: 'yǔ',
+            img: 'yu.gif',
+            audio: 'yuhangyuan'
+        }, {
+            name: '宙斯',
+            han: 'zhòu',
+            img: 'zhou.jpg',
+            audio: 'zhousi'
+        }, {
+            name: '洪水',
+            han: 'hóng',
+            img: 'hong.jpg',
+            audio: 'hongshui'
+        }, {
+            name: '慌山',
+            han: 'huāng',
+            img: 'huangs.jpg',
+            audio: 'huangshan'
+        }, {
+            name: '日光',
+            han: 'rì',
+            img: '1.gif',
+            audio: 'riguang'
+        }, {
+            name: '月亮',
+            han: 'yùe',
+            img: '2.gif',
+            audio: 'yueliang'
+        }, {
+            name: '盈利',
+            han: "yíng",
+            type: 2,
+            img: '3.jpg',
+            audio: 'yingli'
+        }, {
+            name: '昃迎',
+            han: "zè",
+            img: '4.jpg',
+            audio: 'zeying'
+        }, {
+            name: '辰星',
+            han: 'chén',
+            type: 2,
+            img: '5.jpg',
+            audio: 'chenxing'
+        }, {
+            name: '星宿',
+            han: 'sù',
+            type: 2,
+            img: '6.gif',
+            audio: 'xingxiu'
+        }, {
+            name: '列队',
+            han: 'liè',
+            type: 2,
+            img: '7.jpg',
+            audio: 'liedui'
+        }, {
+            name: '张开',
+            han: 'zhāng',
+            img: '8.gif',
+            audio: 'zhanggong'
+        }]
+        var html = ''
+        $.each(list, function(index, item) {
+            html += '<div class="swiper-slide"><img src="./page/' + item.img + '" alt=""/>'
+            html += '<span class="name">'
+            if (item.type == 2) {
+                html += item.name.slice(0, 1) + "<span class='red'>" + item.name.slice(1, 2) + "</span>"
+            } else {
+                html += "<span class='red'>" + item.name.slice(0, 1) + "</span>" + item.name.slice(1, item.name.length)
+            }
+
+            html += '</span>'
+            html += '</div>'
+        });
+        $(function() {
+            speak(list[0].audio)
+        })
+        $('.swiper-wrapper').html(html);
+        window.onresize = function() {
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: true,
+                on: {
+                    slideChangeTransitionEnd: function() {
+                        var _this = this;
+                        speak(list[_this.activeIndex].audio);
+                    },
+                },
+            })
+        }
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: true,
+
+            on: {
+                slideChangeTransitionEnd: function() {
+                    var _this = this;
+                    speak(list[_this.activeIndex].audio);
+                },
+            },
+        })
+
+        function speak(content) {
+            var active = document.querySelector('.swiper-slide-active');
+            var url = "audio/ci/" + content + '.mp3';
+            var audio = document.querySelector('#tts_source');
+            audio.src = url;
+            audio.parentNode.load()
+        }
+        $('.home').on('click', function() {
+            window.location.href = './index.html'
+        })
+    </script>
+</body>
+
+</html>
