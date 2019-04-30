@@ -9,7 +9,7 @@ $('.login-btn').on('click',function(){
         type:"get",
         url:"/yixinjiao/logout.action",
         success:function(){
-            window.location.href = "./login.html"
+            window.location.href = "/yixinjiao/static/login.html"
         },
         error:function(msg){
             layer.msg(msg.msg)
@@ -26,37 +26,37 @@ $('.palyBtn').on('click', function () {
     } else {
         if (ord == 'tuxiang') {
             if (type == 'auto') {
-                window.location.href = 'tuwen.html'
+                window.location.href = '/yixinjiao/static/tuwen.html'
             } else {
-                window.location.href = 'tuwenself.html'
+                window.location.href = '/yixinjiao/static/tuwenself.html'
             }
         }
         else if (ord == "tuwen") {
             if (type == 'auto') {
-                window.location.href = 'tuzi.html'
+                window.location.href = '/yixinjiao/static/tuzi.html'
             } else {
-                window.location.href = 'tuziself.html'
+                window.location.href = '/yixinjiao/static/tuziself.html'
             }
         }
         else if (ord == "hanyu") {
             if (type == 'auto') {
-                window.location.href = 'hanyu.html'
+                window.location.href = '/yixinjiao/static/hanyu.html'
             } else {
-                window.location.href = 'hanyuSelf.html'
+                window.location.href = '/yixinjiao/static/hanyuSelf.html'
             }
         }
         else if (ord == 'xinhanyu') {
             if (type == 'auto') {
-                window.location.href = './tuci.html'
+                window.location.href = '/yixinjiao/static//tuci.html'
             } else {
-                window.location.href = './tuciself.html'
+                window.location.href = '/yixinjiao/static//tuciself.html'
             }
         }
          else if (ord == 'xin1000') {
             if (type == 'auto') {
-                window.location.href = 'xintu.html'
+                window.location.href = '/yixinjiao/static/xintu.html'
             } else {
-                window.location.href = 'xintuself.html'
+                window.location.href = '/yixinjiao/static/xintuself.html'
             }
         }
     }
@@ -84,37 +84,37 @@ $('.login-btn').on('click', function () {
 function jump() {
     if (ord == 'tuxiang') {
         if (type == 'auto') {
-            window.location.href = 'tuwen.html'
+            window.location.href = '/yixinjiao/static/tuwen.html'
         } else {
-            window.location.href = 'tuwenself.html'
+            window.location.href = '/yixinjiao/static/tuwenself.html'
         }
     }
     else if (ord == "tuwen") {
         if (type == 'auto') {
-            window.location.href = 'tuzi.html'
+            window.location.href = '/yixinjiao/static/tuzi.html'
         } else {
-            window.location.href = 'tuziself.html'
+            window.location.href = '/yixinjiao/static/tuziself.html'
         }
     }
     else if (ord == "hanyu") {
         if (type == 'auto') {
-            window.location.href = 'hanyu.html'
+            window.location.href = '/yixinjiao/static/hanyu.html'
         } else {
-            window.location.href = 'hanyuSelf.html'
+            window.location.href = '/yixinjiao/static/hanyuSelf.html'
         }
     }
     else if (ord == 'xinhanyu') {
         if (type == 'auto') {
-            window.location.href = 'tuci.html'
+            window.location.href = '/yixinjiao/static/tuci.html'
         } else {
-            window.location.href = 'tuciself.html'
+            window.location.href = '/yixinjiao/static/tuciself.html'
         }
     }
     else if (ord == 'xin1000') {
         if (type == 'auto') {
-            window.location.href = 'xintu.html'
+            window.location.href = '/yixinjiao/static/xintu.html'
         } else {
-            window.location.href = 'xintuself.html'
+            window.location.href = '/yixinjiao/static/xintuself.html'
         }
     }
     //window.location.href = 'hanyuSelf.html'
